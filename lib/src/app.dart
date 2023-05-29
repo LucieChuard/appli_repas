@@ -7,6 +7,16 @@ import 'sample_feature/sample_item_list_view.dart';
 import 'settings/settings_controller.dart';
 import 'settings/settings_view.dart';
 
+import 'page/connexion.dart';
+import 'page/course.dart';
+import 'page/favoris.dart';
+import 'page/general.dart';
+import 'page/infoperso.dart';
+import 'page/page1tirage.dart';
+import 'page/pagesemainetirage.dart';
+import 'page/profil.dart';
+import 'page/restriction.dart';
+
 /// The Widget that configures your application.
 class MyApp extends StatelessWidget {
   const MyApp({
@@ -72,6 +82,24 @@ class MyApp extends StatelessWidget {
                   case SampleItemDetailsView.routeName:
                     return const SampleItemDetailsView();
                   case SampleItemListView.routeName:
+                  case ConnexionView.routeName:
+                    return ConnexionView();
+                  case CourseView.routeName:
+                    return CourseView();
+                  case FavoriView.routeName:
+                    return FavoriView();
+                  case GeneralView.routeName:
+                    return GeneralView();
+                  case InfopersoView.routeName:
+                    return InfopersoView();
+                  case Page1tirageView.routeName:
+                    return Page1tirageView();
+                  case SemaineTirageView.routeName:
+                    return SemaineTirageView();
+                  case ProfilView.routeName:
+                    return ProfilView();
+                  case RestrictionView.routeName:
+                    return RestrictionView();
                   default:
                     return const SampleItemListView();
                 }
