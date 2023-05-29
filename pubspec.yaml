@@ -8,8 +8,9 @@ version: 1.0.0+1
 
 environment:
   sdk: '>=3.0.2 <4.0.0'
-
+  
 dependencies:
+  mysql1: 0.20.0 
   flutter:
     sdk: flutter
   flutter_localizations:
