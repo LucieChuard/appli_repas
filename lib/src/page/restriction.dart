@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-/// Displays detailed information about a SampleItem.
+
 class RestrictionView extends StatelessWidget {
   const RestrictionView();
 

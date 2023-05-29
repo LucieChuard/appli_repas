@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-/// Displays detailed information about a SampleItem.
+
 class InfopersoView extends StatelessWidget {
   const InfopersoView();
 

@@ -3,16 +3,16 @@ import 'package:flutter/material.dart';
 import 'general.dart';
 
 
-class ConnexionView extends StatelessWidget {
-  const ConnexionView();
+class InscriptionView extends StatelessWidget {
+  const InscriptionView();
 
-  static const routeName = '/connexion';
+  static const routeName = '/inscription';
 
   @override 
 Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Connexion"),
+        title: Text("Inscription"),
       ),
       body: Center(
         child: Column(
