@@ -4,19 +4,23 @@ import 'package:mysql1/mysql1.dart';
 
 class bddaccess {
 
+      String hostutilisateur = '109.234.164.253';
+      int portutilisateur= 3306;
+      String utilisateur= 'admin';
+      String motdepasse= 'L&Smdpadmin';
+      String bdd= 'ecaw6516_recette';
+
 bddaccess();
-
-
 
   Future < List <dynamic> > getData() async {
     final connexion = await MySqlConnection.connect(ConnectionSettings(
       
       
-      host : '',
-      port: 3,
-      user: '',
-      password: '',
-      db: '',
+      host : hostutilisateur,
+      port: portutilisateur,
+      user: utilisateur,
+      password: motdepasse,
+      db: bdd,
     ));
     
     var results = await connexion.query (
@@ -26,6 +30,7 @@ bddaccess();
     return results.toList();
 
     }
+
 }
 
 
